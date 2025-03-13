@@ -24,10 +24,14 @@ El proyecto busca automatizar la extracción y el análisis de secuencias genóm
         -   Archivo de picos que contiene la información de las regiones de unión de cada factor de transcripción (ver sección "Archivo de Picos" al final de la sección de requisitos).
         -   Archivo de la secuencia del genoma de _E. coli_ en formato FASTA.
     -   Añadir un argumento para especificar el directorio de salida donde se almacenarán los archivos generados.
+    - **Validación:** Verificar que los archivos existan, sean legibles y cumplan con el formato esperado.  
+    - **Manejo de errores:** Si algún archivo falta o el formato es incorrecto, mostrar un mensaje de error y detener la ejecución. 
 2.  **Extracción y Procesamiento de Secuencias:**
     
     -   Leer el archivo de picos para obtener las posiciones de inicio y fin de los picos asociados a cada `TF_name`.
     -   Extraer las secuencias desde el archivo FASTA del genoma utilizando las coordenadas `Peak_start` y `Peak_end`, asegurándose de considerar solamente la cadena forward.
+    - **Validación de coordenadas:** Confirmar que `Peak_start` y `Peak_end` estén dentro de los límites del genoma.  
+    - **Manejo de excepciones:** Si las coordenadas son inválidas, registrar el error y continuar o detener la ejecución, como sea necesario.
 3.  **Generación de Archivos FASTA:**
     
     -   Crear archivos FASTA individuales para cada `TF_name`. Los nombres de los archivos deben coincidir con el `TF_name` y usar la extensión `.fa`.
@@ -45,6 +49,7 @@ El proyecto busca automatizar la extracción y el análisis de secuencias genóm
     
     -   Iterar sobre cada archivo FASTA en el directorio proporcionado.
     -   Para cada archivo, debe generar una línea de comando para el software `meme`, ajustada para ejecutar el análisis de motivos con los parámetros predefinidos.
+    - **Validación:** Verificar que cada archivo cumple el formato esperado para evitar errores durante la ejecución de `meme`.
     
 3.  **Salida del Script:**
     
