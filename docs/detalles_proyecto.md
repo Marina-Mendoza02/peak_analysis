@@ -137,16 +137,20 @@ Este archivo contiene información crucial sobre las regiones de unión de los 1
 1.  **Lectura de Entradas:**
     
     -   Cargar el archivo de picos y el archivo FASTA del genoma.
+    -   Validar que ambos archivos existan, sean legibles y cumplan con el formato esperado.
     -   Obtener el directorio de salida desde la línea de comandos.
 2.  **Procesamiento de Datos:**
     
     -   Leer cada fila del archivo de picos.
     -   Extraer los campos `TF_name`, `Peak_start`, `Peak_end` para cada entrada.
     -   Para cada `TF_name`, usar las posiciones `Peak_start` y `Peak_end` para extraer la secuencia correspondiente del archivo FASTA del genoma.
+    - Confirmar que `Peak_start` y `Peak_end` estén dentro de los límites del genoma.  
+      - Si las coordenadas son inválidas, registrar el error y decidir si se omite el registro o se detiene la ejecución.
 3.  **Generación de FASTA:**
     
     -   Agrupar las secuencias extraídas por `TF_name`.
     -   Crear un archivo FASTA por cada `TF_name` en el directorio de salida con la misma estructura `<TF_name>.fa`.
+    - Registrar logs de la operación (éxitos y errores).
 
 
 **Algoritmo**
@@ -208,19 +212,19 @@ actor "Usuario" as usuario
 rectangle "Sistema de Extracción y Creación de FASTA (Python)" {
     usecase "Leer archivo de picos y genoma FASTA" as UC1
     usecase "Extraer y agrupar secuencias por TF_name" as UC2
-    usecase "Generar archivos FASTA" as UC3
+    usecase "Generar archivos FASTA con logging" as UC3
 }
 
 rectangle "Script de Automatización de meme (Shell)" {
     usecase "Leer directorio de archivos FASTA" as UC4
-    usecase "Generar script de comandos meme" as UC5
+    usecase "Generar script de comandos meme y logs" as UC5
 }
 
 usuario --> UC1 : Ejecuta script Python
 UC1 --> UC2
 UC2 --> UC3 : Guarda archivos FASTA
 usuario --> UC4 : Ejecuta script Shell
-UC4 --> UC5 : Crea script de ejecución de meme
+UC4 --> UC5 : Crea script de ejecución de meme y registra logs
 
 @enduml
 ```
