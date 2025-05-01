@@ -5,6 +5,53 @@ import os
 from collections import defaultdict
 from Bio import SeqIO # Para el manejo de secuencias
 
+def parse_peaks(peak_file_path):
+    """
+    Analiza el archivo de picos y devuelve un diccionario con el formato:
+    {tf_name: [(start, end, peak_id), ...]}
+    """ 
+
+    peaks_by_tf = defaultdict(list)
+
+    with open(peak_file_path) as f:
+        # Leer encabezado
+        header = f.readline().strip().split('\t')
+
+        # Verificar que existan las columnas necesarias
+        required_columns = {'TF_name', 'Peak_start', 'Peak_end', 'Dataset_Ids', 'Peak_number'}
+        if not required_columns.issubset(set(header)):
+            missing = required_columns - set(header)
+            raise ValueError(f"Faltan columnas requeridas en el archivo de picos: {missing}")
+        
+        # Procesar cada linea del archivo de picos
+        for line_num, line in enumerate(f,2): # comenzar desde la linea 2
+            fields = line.strip().split('\t')
+            if len(fields) != len(header):
+                print(f"Advertencia: La linea {line_num} tiene {len(fields)} campos, se esperaban {len(header)}. Se omite.")
+                continue
+            
+            peak_data = dict(zip(header, fields))
+
+            try:
+                tf_name = peak_data['TF_name']
+                start = int(peak_data['Peak_start'])
+                end = int(peak_data['Peak_end'])
+                peak_id = f"{peak_data['Dataset_Ids']}_{peak_data['Peak_number']}"
+
+                # Validar coordenadas
+                if start > end:
+                    print(f"Advertencia: La linea {line_num} tiene start > end ({start} > {end}). Se omite.")
+                    continue
+                
+                peaks_by_tf[tf_name].append((start, end, peak_id))
+            except (ValueError, KeyError) as e:
+                print(f"Advertencia: Error al procesar la linea {line_num}: {str(e)}. Se omite.")
+                continue
+
+    return peaks_by_tf
+
+    
+
 def main():
     # Analizar de argumentos de linea de comandos
     parser = argparse.ArgumentParser(
@@ -32,3 +79,4 @@ def main():
 
 if __name__=='__main__':
     main()
+
