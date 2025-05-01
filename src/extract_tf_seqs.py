@@ -50,7 +50,42 @@ def parse_peaks(peak_file_path):
 
     return peaks_by_tf
 
+def extract_sequences(genome_file_path, peaks_dict, output_dir):
+    """
+    Extrae secuencias del genoma y guarda archivos FASTA por cada TF
+    """
+    # Cargar el genoma (asumiendo un solo contig/cromosoma)
+    genome_record = next(SeqIO.parse(genome_file_path, 'fasta'))
+    genome_seq = genome_record.seq
+    genome_length = len(genome_seq)
     
+    print(f"Genoma cargado con longitud de {genome_length} pb")
+    
+    # Procesar cada factor de transcripción
+    for tf_name, peaks in peaks_dict.items():
+        output_path = os.path.join(output_dir, f"{tf_name}.fa")
+        sequences_extracted = 0
+        
+        with open(output_path, 'w') as out_file:
+            for start, end, peak_id in peaks:
+                # Ajustar coordenadas (1-based a 0-based en Python)
+                start_idx = start - 1
+                end_idx = end  # slicing en Python excluye el índice final
+                
+                # Validar coordenadas
+                if start_idx < 0 or end_idx > genome_length:
+                    print(f"Advertencia: Pico {peak_id} con coordenadas ({start}-{end}) "
+                          f"fuera de los límites del genoma (1-{genome_length}). Se omite.")
+                    continue
+                
+                # Extraer secuencia
+                sequence = genome_seq[start_idx:end_idx]
+                
+                # Escribir en formato FASTA
+                out_file.write(f">{peak_id}|{start}-{end}\n{sequence}\n")
+                sequences_extracted += 1
+        
+        print(f"{sequences_extracted} secuencias guardadas para {tf_name} en {output_path}")
 
 def main():
     # Analizar de argumentos de linea de comandos
