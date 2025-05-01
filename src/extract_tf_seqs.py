@@ -90,7 +90,7 @@ def extract_sequences(genome_file_path, peaks_dict, output_dir):
 def main():
     # Analizar de argumentos de linea de comandos
     parser = argparse.ArgumentParser(
-        description = 'Extraer secuencias de union a TFs desde el genoma usando datos de picos'
+        description = 'Extraer secuencias de union a TFs desde el genoma usando datos de picos',
         formatter_class = argparse.ArgumentDefaultsHelpFormatter)
     
     parser.add_argument('peak_file', help='Archivo TSV con informacion de picos')
@@ -111,6 +111,10 @@ def main():
     print(f'Procesando picos desde {args.peak_file}')
     print(f'Usando genoma de {args.genome_file}')
     print(f'La salida se guardara en {args.output_dir}')
+
+    # Llamar funciones para procesar picos y extraer secuencias
+    peaks_dict = parse_peaks(args.peak_file)
+    extract_sequences(args.genome_file, peaks_dict, args.output_dir)
 
 if __name__=='__main__':
     main()
