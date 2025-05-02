@@ -43,8 +43,8 @@ def parse_peaks(peak_file_path):
                 
                 # Extraer información clave
                 tf_name = peak_data['TF_name']  # Nombre del factor de transcripción
-                start = int(peak_data['Peak_start'])  # Inicio del pico
-                end = int(peak_data['Peak_end'])      # Fin del pico
+                start = int(float(peak_data['Peak_start']))  # Inicio del pico
+                end = int(float(peak_data['Peak_end']))      # Fin del pico
                 
                 # Validar que las coordenadas sean correctas
                 if start > end:
