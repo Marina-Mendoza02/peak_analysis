@@ -14,7 +14,7 @@ def parse_peaks(peak_file_path):
     peaks_by_tf = defaultdict(list)
 
     with open(peak_file_path) as f:
-        # Leer encabezado
+        # Leer encabezado y sus columnas
         header = f.readline().strip().split('\t')
 
         # Verificar que existan las columnas necesarias
@@ -23,6 +23,8 @@ def parse_peaks(peak_file_path):
             missing = required_columns - set(header)
             raise ValueError(f"Faltan columnas requeridas en el archivo de picos: {missing}")
         
+#TODO: interrumpir proceso si faltan columnas.
+
         # Procesar cada linea del archivo de picos
         for line_num, line in enumerate(f,2): # comenzar desde la linea 2
             fields = line.strip().split('\t')

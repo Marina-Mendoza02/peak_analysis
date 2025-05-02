@@ -1,0 +1,102 @@
+	Dataset_Ids	TF_name	Peak_start	Peak_end	Peak_center	Peak_number	Max_Fold_Enrichment	Max_Norm_Fold_Enrichment	Proximal_genes	Center_position_type
+0	aaeR inducible 1,aaeR inducible 2	aaeR	3389342.0	3389658.0	3389500.0	1	68.21	1.0	aaeR,tldD	intergenic
+1	aaeR inducible 1,aaeR inducible 2	aaeR	2406963.0	2407345.0	2407192.0	2	59.48	1.0	alaA,lrhA	intergenic
+2	aaeR inducible 1,aaeR inducible 2	aaeR	2985455.0	2985799.0	2985636.0	3	51.0	0.861014	yqeF,yqeG	intergenic
+3	aaeR inducible 1,aaeR inducible 2	aaeR	52313.0	52557.0	52425.0	4	42.0	0.956533	apaH-apaG,apaH-apaG-rsmA	genic
+4	aaeR inducible 1,aaeR inducible 2	aaeR	4259119.0	4259374.0	4259257.0	5	30.19	0.559163	yjbJ,zur	genic
+5	aaeR inducible 1,aaeR inducible 2	aaeR	3004839.0	3005276.0	3005010.0	6	23.55	0.785618	xdhA-xdhB-xdhC,ygeV	genic
+6	aaeR inducible 1,aaeR inducible 2	aaeR	1894592.0	1894880.0	1894740.0	7	22.16	0.858063	pabB-nudL,yoaH	intergenic
+7	aaeR inducible 1,aaeR inducible 2	aaeR	4360717.0	4361004.0	4360857.0	8	22.04	0.707808	cadA-cadB,cadC	genic
+8	aaeR inducible 1,aaeR inducible 2	aaeR	3379897.0	3380156.0	3380042.0	9	21.91	0.761739	zapE	intergenic
+9	aaeR inducible 1,aaeR inducible 2	aaeR	1779216.0	1779512.0	1779394.0	10	20.73	0.309901	ydiP,ydiQ-ydiR-ydiS-ydiT-fadK	intergenic
+10	aaeR inducible 1,aaeR inducible 2	aaeR	571122.0	572209.0	571616.0	11	20.55	0.347733	ybcL-ybcM,ylcH	genic
+11	aaeR inducible 1,aaeR inducible 2	aaeR	1287626.0	1288124.0	1287794.0	12	20.24	0.784009	purU,tpr-tyrV-tyrT	genic
+12	aaeR inducible 1,aaeR inducible 2	aaeR	1525883.0	1526292.0	1526049.0	13	19.97	0.537966	ansP,yncG	intergenic
+13	aaeR inducible 1,aaeR inducible 2	aaeR	582893.0	583272.0	583097.0	14	19.14	0.431715	appY,tfaX	intergenic
+14	aaeR inducible 1,aaeR inducible 2	aaeR	1215203.0	1215604.0	1215440.0	15	18.68	0.392273	bluF,ycgE	genic
+15	aaeR inducible 1,aaeR inducible 2	aaeR	3374465.0	3374895.0	3374780.0	16	18.64	0.330829	dcuD	intergenic
+16	aaeR inducible 1,aaeR inducible 2	aaeR	2240397.0	2240694.0	2240529.0	17	18.41	0.492353	mglC-mglA,mglC-mglA-mglB	intergenic
+17	aaeR inducible 1,aaeR inducible 2	aaeR	1718143.0	1718380.0	1718265.0	18	17.8	0.548967	mliC,pdxY-tyrS-pdxH	genic
+18	aaeR inducible 1,aaeR inducible 2	aaeR	2494807.0	2495070.0	2494972.0	19	17.33	0.519989	yfdY,ypdI	genic
+19	aaeR inducible 1,aaeR inducible 2	aaeR	1488042.0	1488284.0	1488160.0	20	16.97	0.301583	aldA,ydcF	intergenic
+20	aaeR inducible 1,aaeR inducible 2	aaeR	2421367.0	2421638.0	2421506.0	21	16.55	0.63751	folX-yfcH,yfcI	genic
+21	aaeR inducible 1,aaeR inducible 2	aaeR	2524898.0	2525405.0	2525050.0	22	16.42	0.332707	xapB-xapA,yfeN	intergenic
+22	aaeR inducible 1,aaeR inducible 2	aaeR	2352400.0	2352623.0	2352519.0	23	16.36	0.374564	glpA-glpB,inaA-glpQ-glpT	intergenic
+23	aaeR inducible 1,aaeR inducible 2	aaeR	4260478.0	4260931.0	4260707.0	24	15.95	0.48645	dusA-pspG,yjbL-yjbM	genic
+24	aaeR inducible 1,aaeR inducible 2	aaeR	4525509.0	4526231.0	4525841.0	25	15.64	0.35766	yjhF,yjhG-yjhH-yjhI	genic
+25	aaeR inducible 1,aaeR inducible 2	aaeR	1219198.0	1219487.0	1219336.0	26	15.24	0.35605	ycgH,ymgF	intergenic
+26	aaeR inducible 1,aaeR inducible 2	aaeR	581134.0	581617.0	581402.0	27	14.67	0.504964	aaaD,tfaD	genic
+27	aaeR inducible 1,aaeR inducible 2	aaeR	3286049.0	3286385.0	3286202.0	28	14.56	0.457473	agaS-kbaY-agaB-agaC-agaD-agaI,yraH	genic
+28	aaeR inducible 1,aaeR inducible 2	aaeR	2623796.0	2624065.0	2623953.0	29	14.43	0.558626	ppk-ppx,yfgF	genic
+29	aaeR inducible 1,aaeR inducible 2	aaeR	3843632.0	3844101.0	3843779.0	30	14.31	0.522404	adeQ,yicN	genic
+30	aaeR inducible 1,aaeR inducible 2	aaeR	2482561.0	2483164.0	2483006.0	31	14.24	0.367588	dsdA,emrY-emrK	genic
+31	aaeR inducible 1,aaeR inducible 2	aaeR	576731.0	576952.0	576813.0	32	13.99	0.314194	insH-2,nmpC	genic
+32	aaeR inducible 1,aaeR inducible 2	aaeR	1310712.0	1311055.0	1310866.0	33	13.96	0.343708	kch,yciI	genic
+33	aaeR inducible 1,aaeR inducible 2	aaeR	1309432.0	1310055.0	1309671.0	34	13.71	0.514891	kch,yciY	genic
+34	aaeR inducible 1,aaeR inducible 2	aaeR	3696780.0	3697078.0	3696898.0	35	13.46	0.521331	bcsE-bcsF-bcsG,rdlD	genic
+35	aaeR inducible 1,aaeR inducible 2	aaeR	1572359.0	1572731.0	1572565.0	36	13.21	0.4945	gadC-gadB,pqqL	genic
+36	aaeR inducible 1,aaeR inducible 2	aaeR	2488149.0	2488419.0	2488257.0	37	13.18	0.310974	evgL,yfdE	genic
+37	aaeR inducible 1,aaeR inducible 2	aaeR	234010.0	234326.0	234182.0	38	12.85	0.331902	gloB,mltD	genic
+38	aaeR inducible 1,aaeR inducible 2	aaeR	4045059.0	4045626.0	4045203.0	39	12.75	0.334317	yihF,yihG	genic
+39	aaeR inducible 1,aaeR inducible 2	aaeR	3267750.0	3267974.0	3267885.0	40	12.64	0.396566	rnpB,yhaB-yhaC	genic
+40	aaeR inducible 1,aaeR inducible 2	aaeR	1495022.0	1495304.0	1495138.0	41	12.55	0.313657	ydcI	intergenic
+41	aaeR inducible 1,aaeR inducible 2	aaeR	1445167.0	1445400.0	1445304.0	42	12.38	0.479474	feaR,ydbH-ynbE-ydbL	genic
+42	aaeR inducible 1,aaeR inducible 2	aaeR	3188417.0	3188721.0	3188535.0	43	12.24	0.406493	glgS,insC-5-insD-5-yqiH-yqiI-insCD5	genic
+43	aaeR inducible 1,aaeR inducible 2	aaeR	606142.0	606313.0	606213.0	44	12.17	0.359538	ybdJ,ybdK	intergenic
+44	aaeR inducible 1,aaeR inducible 2	aaeR	1507456.0	1507745.0	1507610.0	45	12.13	0.452643	ydcP,yncJ	genic
+45	aaeR inducible 1,aaeR inducible 2	aaeR	2682691.0	2682972.0	2682794.0	46	12.08	0.467668	yphG,yphH	intergenic
+46	aaeR inducible 1,aaeR inducible 2	aaeR	1915629.0	1915835.0	1915744.0	47	11.92	0.418567	msrC,prc-proQ	genic
+47	aaeR inducible 1,aaeR inducible 2	aaeR	1720864.0	1721091.0	1720938.0	48	11.81	0.277703	ydhI-ydhJ	intergenic
+48	aaeR inducible 1,aaeR inducible 2	aaeR	4576206.0	4576409.0	4576313.0	49	11.68	0.40542	mcrC-mcrB,yjiV	genic
+49	aaeR inducible 1,aaeR inducible 2	aaeR	3362118.0	3362383.0	3362271.0	50	11.51	0.395761	yhcA-yhcD,yhcE	genic
+50	aaeR inducible 1,aaeR inducible 2	aaeR	1107727.0	1108018.0	1107881.0	51	11.49	0.297558	clsC,opgC	genic
+51	aaeR inducible 1,aaeR inducible 2	aaeR	2886976.0	2887177.0	2887072.0	52	11.48	0.379125	ygbF-ygbT-casE-casD-casC-casB-casA,ygcB	genic
+52	aaeR inducible 1,aaeR inducible 2	aaeR	1190345.0	1190619.0	1190490.0	53	11.2	0.396297	phoQ-phoP,roxA-phoQ-phoP	intergenic
+53	aaeR inducible 1,aaeR inducible 2	aaeR	3922506.0	3922982.0	3922615.0	54	10.99	0.264556	atpC-atpD-atpG-atpA-atpH-atpF-atpE-atpB-atpI,atpH-atpF-atpE-atpB-atpI	intergenic
+54	aaeR inducible 1,aaeR inducible 2	aaeR	2487434.0	2487697.0	2487586.0	55	10.86	0.420714	evgL,yfdE	genic
+55	aaeR inducible 1,aaeR inducible 2	aaeR	578882.0	579173.0	579058.0	56	10.76	0.343171	borD,ybcV	intergenic
+56	aaeR inducible 1,aaeR inducible 2	aaeR	2679656.0	2679864.0	2679755.0	57	10.7	0.403005	yphD-yphE-yphF,yphG	genic
+57	aaeR inducible 1,aaeR inducible 2	aaeR	1780441.0	1780684.0	1780571.0	58	10.55	0.371344	ppsA,ydiQ-ydiR-ydiS-ydiT-fadK	genic
+58	aaeR inducible 1,aaeR inducible 2	aaeR	336217.0	336457.0	336299.0	59	10.54	0.408103	yahE,yahH	genic
+59	aaeR inducible 1,aaeR inducible 2	aaeR	1090565.0	1090825.0	1090644.0	60	10.52	0.407566	pgaD-pgaC-pgaB-pgaA,phoH	genic
+60	aaeR inducible 1,aaeR inducible 2	aaeR	1601177.0	1601431.0	1601272.0	61	10.46	0.405152	lsrK-lsrR,lsrR	intergenic
+61	aaeR inducible 1,aaeR inducible 2	aaeR	2781070.0	2781293.0	2781172.0	62	10.41	0.403005	yfjX-yfjY-yfjZ-ypjF-ypjJ,ypjA	genic
+62	aaeR inducible 1,aaeR inducible 2	aaeR	1775400.0	1775613.0	1775489.0	63	10.02	0.302388	aroD-ydiF,ydiF-ydiO	intergenic
+63	aaeR inducible 1,aaeR inducible 2	aaeR	1737259.0	1737451.0	1737380.0	64	10.01	0.267507	ydhP,ynhF	intergenic
+64	aaeR inducible 1,aaeR inducible 2	aaeR	4600434.0	4600614.0	4600533.0	65	9.85	0.327073	opgB,yjjA-dnaC-dnaT	genic
+65	aaeR inducible 1,aaeR inducible 2	aaeR	1831909.0	1832081.0	1832010.0	66	9.2	0.272874	astE-astB-astD-astA-astC,spy	intergenic
+66	aaeR inducible 1,aaeR inducible 2	aaeR	3716376.0	3716600.0	3716517.0	67	9.2	0.306949	bisC,yiaD	intergenic
+67	aaeR inducible 1,aaeR inducible 2	aaeR	41855.0	42176.0	41993.0	68	8.47	0.328146	caiC-caiB,caiE-caiD-caiC-caiB-caiA-caiT	intergenic
+68	aaeR inducible 1,aaeR inducible 2	aaeR	1453614.0	1453909.0	1453716.0	69	7.79	0.282265	paaA-paaB-paaC-paaD-paaE-paaF-paaG-paaH-paaI-paaJ-paaK,paaZ	intergenic
+69	agaR inducible 1,agaR native 1	agaR	3277867.0	3280579.0	3278846.0	1	3626.5	1.0	agaR,kbaZ-agaV-agaW-agaA	intergenic
+70	agaR inducible 1,agaR native 1	agaR	3280889.0	3282684.0	3281889.0	2	2987.05	0.907183	agaS-kbaY-agaB-agaC-agaD-agaI,kbaZ-agaV-agaW-agaA	intergenic
+71	agaR inducible 1,agaR native 1	agaR	1636062.0	1636856.0	1636463.0	3	42.16	0.147574	pinQ,tfaQ-stfQ-nohQ	intergenic
+72	agaR inducible 1,agaR native 1	agaR	580354.0	581179.0	580751.0	4	38.13	0.12025	nohD,ylcI	intergenic
+73	agaR inducible 1,agaR native 1	agaR	3098610.0	3099482.0	3099086.0	5	37.96	0.058667	rdgB-yggW,yggM	genic
+74	agaR inducible 1,agaR native 1	agaR	3151723.0	3152469.0	3152103.0	6	21.42	0.060511	metC,metC-yghB	intergenic
+75	agaR inducible 1,agaR native 1	agaR	3767990.0	3768573.0	3768241.0	7	13.22	0.047362	yibG,yibS	genic
+76	agaR inducible 1,agaR native 1	agaR	4326709.0	4326996.0	4326879.0	8	6.68	0.062009	crfC-yjcZ,yjdM	intergenic
+77	allR native 1,allR native 2,allR native 3,allR native 4,allR native 5,allR native 6,allR native 7,allR native 8,allR native 9,allR native 10,allR native 11,allR in vitro 1x 2,allR native 12,allR native 13,allR native 14,allR native 15	allR	531850.0	534550.0	533893.0	1	915.98	1.0	allR,gcl-hyi-glxR-ybbW-allB-ybbY-glxK	intergenic
+78	allR native 1,allR native 2,allR native 3,allR native 4,allR native 6,allR native 7,allR native 8,allR native 9,allR native 10,allR native 11,allR in vitro 1x 2,allR native 12,allR native 13,allR native 14	allR	531864.0	532890.0	532342.0	2	690.61	0.942303	allA,allS	intergenic
+79	allR native 1,allR native 2,allR native 3,allR native 4,allR native 6,allR native 7,allR native 8,allR native 9,allR native 10,allR native 11,allR in vitro 1x 2,allR native 13	allR	2095864.0	2096371.0	2096132.0	3	117.31	0.29335	hisB-hisH-hisA-hisF-hisI,wzzB	genic
+80	allR native 1,allR native 2,allR native 3,allR native 4,allR native 6,allR native 7,allR native 8,allR native 9,allR native 10,allR native 11,allR in vitro 1x 2,allR native 13	allR	1772302.0	1772918.0	1772641.0	4	115.23	0.196019	aroD,ydiN-ydiB-aroD	genic
+81	allR native 1,allR native 2,allR native 3,allR native 9,allR native 10,allR native 11,allR in vitro 1x 2	allR	101845.0	102498.0	102177.0	5	111.37	0.151965	ftsL-ftsI-murE-murF-mraY-murD-ftsW-murG-murC-ddlB-ftsQ-ftsA-ftsZ-lpxC,ftsQ	genic
+82	allR native 1,allR native 2,allR native 3,allR native 4,allR native 6,allR native 7,allR native 8,allR native 9,allR native 10,allR native 11,allR in vitro 1x 2,allR native 13	allR	3331248.0	3331873.0	3331558.0	6	86.6	0.270522	dacB,obgE	genic
+83	allR native 1,allR native 2,allR native 7,allR native 9,allR native 10,allR native 11,allR in vitro 1x 2	allR	1046932.0	1047593.0	1047271.0	7	84.52	0.115326	etk-etp-gfcE,gfcD-gfcC	genic
+84	allR native 1,allR native 2,allR native 3,allR native 4,allR native 6,allR native 7,allR native 8,allR native 9,allR native 10,allR native 11,allR in vitro 1x 2,allR native 13,allR native 14	allR	2766081.0	2766628.0	2766345.0	8	75.32	0.164022	rnlA,rnlB	genic
+85	allR native 1,allR native 2,allR native 3,allR native 4,allR native 6,allR native 7,allR native 8,allR native 9,allR native 10,allR native 11,allR in vitro 1x 2,allR native 13	allR	3672114.0	3672721.0	3672471.0	9	71.03	0.161871	yhjC-yhjD,yhjD	genic
+86	allR native 1,allR native 2,allR native 7,allR native 8,allR native 9,allR native 10,allR native 11,allR in vitro 1x 2,allR native 13	allR	2979905.0	2980526.0	2980218.0	10	67.22	0.091716	lysA,ygeA	genic
+87	allR native 1,allR native 2,allR native 3,allR native 7,allR native 9,allR native 10,allR native 11,allR in vitro 1x 2	allR	209352.0	209965.0	209659.0	11	65.8	0.089777	accA,ldcC	intergenic
+88	allR native 1,allR native 2,allR in vitro 1x 2	allR	3192515.0	3193145.0	3192740.0	12	65.75	0.089709	ibsD,yqiJ-yqiK	genic
+89	allR native 1,allR native 2,allR native 3,allR native 4,allR native 7,allR native 8,allR native 9,allR native 10,allR native 11,allR in vitro 1x 2,allR native 13	allR	849859.0	850489.0	850188.0	13	64.03	0.108768	ompX-yliM,rhtA	intergenic
+90	allR native 1,allR native 2,allR native 3,allR native 9,allR native 10,allR native 11	allR	4421563.0	4421918.0	4421738.0	14	58.99	0.091907	ulaA-ulaB-ulaC-ulaD-ulaE-ulaF,ulaD-ulaE	genic
+91	allR native 1,allR native 2,allR native 3,allR native 4,allR native 7,allR native 8,allR native 9,allR native 10,allR native 11,allR in vitro 1x 2,allR native 13	allR	3456055.0	3456627.0	3456337.0	15	57.53	0.089646	bfr-bfd,gspB-gspA	genic
+92	allR native 1,allR native 2,allR native 3,allR native 4,allR native 7,allR native 8,allR native 9,allR native 10,allR native 11,allR in vitro 1x 2,allR native 13	allR	1952192.0	1952640.0	1952427.0	16	57.32	0.10977	cmoA-cmoB,yecN-cmoA-cmoB	genic
+93	allR native 1,allR native 2,allR native 3,allR native 4,allR native 7,allR native 8,allR native 9,allR native 10,allR native 11,allR in vitro 1x 2,allR native 13	allR	579272.0	579926.0	579605.0	17	55.57	0.091585	ybcV,ybcW	intergenic
+94	allR native 1,allR in vitro 1x 2	allR	3532337.0	3532923.0	3532650.0	18	54.65	0.07457	pck,yhgE	intergenic
+95	allR native 1,allR native 2,allR native 9,allR native 10,allR native 11,allR in vitro 1x 2	allR	3797621.0	3798326.0	3798002.0	19	54.25	0.074026	hldD-waaF-waaC-waaL,yibX	genic
+96	allR native 1,allR native 2,allR native 7,allR native 9,allR native 10,allR native 11,allR in vitro 1x 2	allR	559483.0	560112.0	559811.0	20	50.99	0.06957	sfmC-sfmD,sfmH-sfmF	genic
+97	allR native 1,allR native 2,allR native 3,allR native 4,allR native 7,allR native 8,allR native 9,allR native 10,allR native 11,allR in vitro 1x 2,allR native 13	allR	3852790.0	3853319.0	3853059.0	21	50.58	0.086046	ilvN-ilvB-ivbL,istR	intergenic
+98	allR native 1,allR native 2,allR native 3,allR native 4,allR native 7,allR native 8,allR native 9,allR native 10,allR native 11,allR in vitro 1x 2,allR native 13	allR	3501031.0	3501474.0	3501347.0	22	50.3	0.102916	frlA-frlB-frlD-yhfR-frlC,yhfR	genic
+99	allR native 1,allR native 2,allR native 3,allR native 9	allR	3598886.0	3599216.0	3599042.0	23	46.23	0.07203	livJ,panM	genic
+100	allR native 1,allR native 2,allR native 3,allR native 4,allR native 6,allR native 7,allR native 8,allR native 9,allR native 10,allR native 11,allR in vitro 1x 2,allR native 13	allR	3661018.0	3661438.0	3661236.0	24	42.59	0.137766	gadW,mdtE-mdtF	genic
