@@ -116,18 +116,55 @@ def extract_sequences(genome_file_path, peaks_dict, output_dir):
         print(f"ERROR CRITICO: {str(e)}", file=sys.stderr)
         sys.exit(1)
 
-def main():
-    # Configurar el parser de argumentos de linea de comandos
-    parser = argparse.ArgumentParser(
-        description='Extraer secuencias de union a TFs usando datos de ChIP-Seq',
-        formatter_class=argparse.ArgumentDefaultsHelpFormatter)
-    
-    # Definir argumentos requeridos
-    parser.add_argument('peak_file', help='Archivo TSV con informacion de picos ChIP-Seq')
-    parser.add_argument('genome_file', help='Archivo FASTA con la secuencia del genoma')
-    parser.add_argument('output_dir', help='Directorio para los archivos FASTA de salida')
 
-    # Procesar argumentos
+def parse_args():
+    """
+    Analiza los argumentos de línea de comandos para la extracción de secuencias
+    de unión a factores de transcripción.
+
+    Devuelve:
+        argparse.Namespace: Objeto con los argumentos parseados:
+            - peaks (str): Ruta al archivo TSV con los datos de picos ChIP-Seq.
+            - genome (str): Ruta al archivo FASTA con la secuencia del genoma.
+            - outdir (str): Ruta al directorio de salida para las secuencias extraídas.
+
+    Nota:
+        Los argumentos originalmente eran posicionales, pero se cambiaron a argumentos
+        opcionales con flags requeridas para mejorar la claridad y flexibilidad del script.
+        Se deben especificar usando:
+            -p / --peaks    para el archivo de picos
+            -g / --genome   para el archivo del genoma
+            -o / --outdir   para el directorio de salida
+    """
+    parser = argparse.ArgumentParser(
+        description='Extrae secuencias de union a TFs usando datos de ChIP-Seq',
+        formatter_class=argparse.ArgumentDefaultsHelpFormatter
+    )
+
+    parser.add_argument(
+        '-p', '--peaks',
+        required=True,
+        help='Archivo TSV con información de picos ChIP-Seq'
+    )
+
+    parser.add_argument(
+        '-g', '--genome',
+        required=True,
+        help='Archivo FASTA con la secuencia del genoma'
+    )
+
+    parser.add_argument(
+        '-o', '--outdir',
+        required=True,
+        help='Directorio para los archivos FASTA de salida'
+    )
+
+    return parser.parse_args()
+
+
+def main():
+
+    # Analizar argumentos de línea de comandos
     args = parser.parse_args()
 
     try:
