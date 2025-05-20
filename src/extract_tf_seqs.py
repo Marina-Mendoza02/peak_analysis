@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 # Script para extraer secuencias de union a factores de transcripcion
+# python src/extract_tf_seqs.py data/union_peaks_file.tsv data/E_coli_K12_MG1655_U00096.3.fasta results/
 
 import argparse
 import os        # Para manejo de rutas y sistema de archivos
