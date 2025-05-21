@@ -24,8 +24,6 @@ def extract_sequences(genome_record: SeqRecord, peaks_dict: dict, output_dir: st
     genome_seq = genome_record.seq
     genome_length = len(genome_seq)
 
-    os.makedirs(output_dir, exist_ok=True)
-
     print(f"\nProcesando {len(peaks_dict)} factores de transcripción...")
 
     summary = {}
