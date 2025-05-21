@@ -10,7 +10,7 @@ def load_genome(genome_file_path):
         genome_file_path (str): Ruta al archivo FASTA del genoma.
         
     Returns:
-        tuple: (SeqRecord, genome_length) si tiene éxito.
+        SeqRecord: el registro de la secuencia cargada.
     
     Sale con mensaje de error si:
         - El archivo no existe
@@ -26,8 +26,10 @@ def load_genome(genome_file_path):
         # Intentar analizar el archivo FASTA
         with open(genome_file_path) as f:
             genome_record = next(SeqIO.parse(f, 'fasta'))
-            genome_length = len(genome_record.seq)
-            return genome_record, genome_length
+            if genome_record is None:
+                print(f"ERROR: Archivo vacío o inválido: {genome_file_path}", file=sys.stderr)
+                sys.exit(1)
+            return genome_record
 
     except StopIteration:  # Se lanza si el FASTA está vacío
         print(f"ERROR: El archivo de genoma está vacío: {genome_file_path}", file=sys.stderr)

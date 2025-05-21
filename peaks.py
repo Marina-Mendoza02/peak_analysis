@@ -5,13 +5,29 @@ def parse_peaks(peak_file_path):
     """
     Analiza el archivo de picos y devuelve un diccionario con el formato:
     {tf_name: [(start, end, peak_id), ...]}
+
+    El archivo debe contener al menos las siguientes columnas:
+        - TF_name: Nombre del factor de transcripción asociado al pico.
+        - Peak_start: Coordenada inicial del pico (puede ser float o int).
+        - Peak_end: Coordenada final del pico (puede ser float o int).
+        - Dataset_Ids: Identificador del experimento o conjunto de datos.
+        - Peak_number: Número o identificador específico del pico dentro del dataset.
+    
+    Cada línea del archivo se procesa y se valida:
+        - Se omiten líneas con un número incorrecto de columnas.
+        - Se omiten picos con coordenadas inválidas (ej. start > end).
+        - Se ignoran líneas con errores de conversión o claves faltantes.
+
+    Salida de errores:
+        - Si faltan columnas requeridas en el encabezado, imprime un mensaje de error y finaliza el programa.
+        - Las advertencias se muestran en stderr pero no detienen la ejecución.
     """ 
     # Diccionario para agrupar picos por factor de transcripcion
     peaks_by_tf = defaultdict(list)
 
     with open(peak_file_path) as f:
         # Leer el encabezado del archivo TSV
-        header = f.readline().strip().split('\t')
+        header = f.readline().split('\t')
         
         # Columnas obligatorias que debe tener el archivo
         required_columns = {'TF_name', 'Peak_start', 'Peak_end', 'Dataset_Ids', 'Peak_number'}

@@ -6,7 +6,7 @@ def write_tf_fastas(tf_name, sequences, output_dir):
 
     Parámetros:
         tf_name (str): Nombre del factor de transcripción para usar como nombre de archivo.
-        sequences (list of tuples): Lista de secuencias a escribir, cada una representada como una tupla:
+        sequences (lista de tuplas): Lista de secuencias a escribir, cada una representada como una tupla:
                                    (peak_id, start, end, seq), donde:
                                    - peak_id (str): Identificador único del pico.
                                    - start (int): Posición inicial (1-based) del pico en el genoma.
