@@ -6,8 +6,8 @@ from genome import load_genome
 from extractor import extract_sequences as write_sequences
 
 # Ejemplo de uso
-# Con archivo de picos más corto: python main.py -p data/union_peaks_file_short.tsv -g data/E_coli_K12_MG1655_U00096.3.fasta -o results/
-# Archivo de picos completo: python main.py -p data/union_peaks_file.tsv -g data/E_coli_K12_MG1655_U00096.3.fasta -o results/
+# Con archivo de picos más corto: python src/main.py -p data/union_peaks_file_short.tsv -g data/E_coli_K12_MG1655_U00096.3.fasta -o results/
+# Archivo de picos completo: python src/main.py -p data/union_peaks_file.tsv -g data/E_coli_K12_MG1655_U00096.3.fasta -o results/
 
 
 def parse_args():
