@@ -27,10 +27,6 @@ def parse_args():
         opcionales con flags requeridas para mejorar la claridad y flexibilidad del script.
     """
     parser = argparse.ArgumentParser(
-        description='Extrae secuencias de union a TFs usando datos de ChIP-Seq',
-        formatter_class=argparse.ArgumentDefaultsHelpFormatter
-    )
-    parser = argparse.ArgumentParser(
         description='Extrae secuencias de unión a factores de transcripción (TFs) usando datos de ChIP-Seq',
         formatter_class=argparse.ArgumentDefaultsHelpFormatter
     )
